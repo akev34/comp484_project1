@@ -1,0 +1,104 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Movie Cards */
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Image Fix */
+.movie-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #333;
+}
+
+/* Required Element Styles */
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+mark {
+    background-color: yellow;
+    padding: 2px;
+}
+
+details {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Forms */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.editable-notes {
+    border: 1px dashed #333;
+    padding: 10px;
+    min-height: 50px;
+    background-color: #fafafa;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}

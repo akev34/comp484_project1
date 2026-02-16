@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>My Watchlist</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Favorites</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="watchlist.html">Watchlist</a>
+    </nav>
+    <main>
+        <div class="card">
+            <label>Movie Title:</label>
+            <input type="text" id="movieInput" placeholder="e.g. Inception" autofocus>
+
+            <label>Notes:</label>
+            <textarea id="notesInput" placeholder="Why watch this?" spellcheck="true"></textarea>
+            
+            <button onclick="addMovie()" style="padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; margin-top: 10px;">Add to List</button>
+        </div>
+
+        <h3>My Saved List</h3>
+        <ul id="movieList">
+            </ul>
+
+        <hr>
+        <h3>Scratchpad</h3>
+        <div class="editable-notes" contenteditable="true" spellcheck="true">Click here to type...</div>
+    </main>
+
+    <script>
+        // FUNCTION: Adds a movie to the list
+        function addMovie() {
+            let title = document.getElementById('movieInput').value;
+            let notes = document.getElementById('notesInput').value;
+            let list = document.getElementById('movieList');
+
+            if (title === "") {
+                alert("Please enter a movie title!");
+                return;
+            }
+
+            // Create a new list item
+            let listItem = document.createElement('li');
+            listItem.innerHTML = "<strong>" + title + "</strong> - " + notes;
+            
+            list.appendChild(listItem);
+
+            document.getElementById('movieInput').value = "";
+            document.getElementById('notesInput').value = "";
+        }
+    </script>
+
+    <footer><p>&copy; 2026 My Movie Project</p></footer>
+</body>
+</html>
