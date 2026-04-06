@@ -1,0 +1,129 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2c3e50; /* Dark header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Yellow hover effect */
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Component Styling */
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Styling the <details> element */
+details {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Styling the <mark> element */
+mark {
+    background-color: #f1c40f;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Styling the <progress> element */
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+/* Styling for Forms and Inputs */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+/* Styling for the editable div */
+.editable-notes {
+    border: 2px dashed #3498db;
+    padding: 15px;
+    min-height: 100px;
+    background-color: #f9fbfd;
+    margin-top: 10px;
+}
+
+/* --- NEW ADDITION: Image Styling --- */
+.movie-img {
+    width: 100%;           /* Make image take up full width of the card */
+    max-width: 300px;      /* But stop it from getting too huge */
+    height: auto;          /* Keep the aspect ratio (don't squish it) */
+    display: block;        /* Helps with centering */
+    margin: 10px auto;     /* Center the image and add space */
+    border-radius: 5px;    /* Rounded corners */
+    border: 1px solid #ddd; /* A subtle border */
+}
